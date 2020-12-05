@@ -106,7 +106,10 @@ public class DisplaySongFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-                //Play Song
+                Intent intent = new Intent(getActivity(), PlaySongActivity.class);
+                intent.putExtra("songData", songData);
+                intent.putExtra("songName", songName);
+                startActivity(intent);
             }
         });
         return view;
