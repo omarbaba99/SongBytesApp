@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DisplaySongFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/mainTextHeader2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="Please choose your desired song from the list"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20sp"/>
 
-</FrameLayout>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mainTextHeader2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mainTextHeader3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:text="Selected Song Details"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/songmainTextHeader4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainTextHeader3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Selected Song Details"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button_select"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/songmainTextHeader4"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Play song"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
