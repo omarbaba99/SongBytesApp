@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ public class PlaySongActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String songData = intent.getStringExtra("songData");
         TextView textView = (TextView) findViewById(R.id.playMainTextHeader3);
+        textView.setMovementMethod(new ScrollingMovementMethod());
         textView.setText(songData);
 
         String songName = intent.getStringExtra("songName");

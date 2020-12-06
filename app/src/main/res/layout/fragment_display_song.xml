@@ -59,6 +59,7 @@
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:text="Play song"
+        android:background="@color/colorPrimary"
         android:textAllCaps="false"
         android:textSize="20dp"
         android:textColor="@color/white"

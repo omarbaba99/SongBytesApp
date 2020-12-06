@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SongBytesApp</string>
+    <string name="app_name">Song Bytes</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Custom fragment</string>
 </resources>

@@ -23,7 +23,7 @@
         android:id="@+id/imageView"
         android:layout_below="@+id/playMainTextHeader"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:background="@drawable/download"/>
@@ -69,23 +69,31 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linLayout"
         android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="5dp"
         android:gravity="center"
         android:text="Song Details"
         android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         android:fontFamily="@font/bariol_bold"/>
 
-    <TextView
-        android:id="@+id/playMainTextHeader3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/playMainTextHeader2"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:gravity="center"
-        android:textColor="@color/design_default_color_primary"
-        android:textSize="20sp"
-        android:fontFamily="@font/bariol_bold"/>
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="95dp"-->
+<!--        android:layout_below="@+id/playMainTextHeader2">-->
+
+        <TextView
+            android:layout_below="@+id/playMainTextHeader2"
+            android:id="@+id/playMainTextHeader3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="20sp"
+            android:scrollbars = "vertical"
+            android:fontFamily="@font/bariol_bold"/>
+<!--    </ScrollView>-->
 
 </RelativeLayout>
