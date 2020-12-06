@@ -16,7 +16,8 @@
         android:gravity="center"
         android:text="Song Bytes"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="35sp"/>
+        android:textSize="35sp"
+        android:fontFamily="@font/bariol_bold"/>
 
     <ImageView
         android:id="@+id/bannerImage"

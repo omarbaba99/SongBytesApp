@@ -16,7 +16,8 @@
         android:layout_margin="45dp"
         android:gravity="center"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:fontFamily="@font/bariol_bold"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -72,7 +73,8 @@
         android:gravity="center"
         android:text="Song Details"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/bariol_bold"/>
 
     <TextView
         android:id="@+id/playMainTextHeader3"
@@ -83,6 +85,7 @@
         android:layout_margin="5dp"
         android:gravity="center"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/bariol_bold"/>
 
 </RelativeLayout>

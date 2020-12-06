@@ -17,7 +17,8 @@
         android:text="Enter New Song Details"
         android:layout_marginBottom="50dp"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="35sp"/>
+        android:textSize="35sp"
+        android:fontFamily="@font/bariol_bold"/>
 
     <EditText
         android:id="@+id/editTextName"
@@ -76,7 +77,9 @@
             android:id="@+id/tvAttachment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            app:drawableLeftCompat="@drawable/ic_upload"
+            app:drawableStartCompat="@drawable/ic_upload"/>
     </LinearLayout>
     <Button
         android:id="@+id/button_addSong"
@@ -91,6 +94,6 @@
         app:backgroundTint="@color/design_default_color_primary"
         android:layout_marginTop="50dp"
         android:onClick="addSong"
-        />
+        android:fontFamily="@font/bariol_bold"/>
 
 </RelativeLayout>

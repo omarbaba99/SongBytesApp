@@ -15,7 +15,8 @@
         android:gravity="center"
         android:text="Please choose your desired song from the list"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/bariol_bold"/>
 
     <Spinner
         android:id="@+id/spinner"
@@ -35,7 +36,8 @@
         android:gravity="center"
         android:text="Selected Song Details"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:fontFamily="@font/bariol_bold"/>
 
     <TextView
         android:id="@+id/songmainTextHeader4"
@@ -47,7 +49,8 @@
         android:gravity="center"
         android:text="Selected Song Details"
         android:textColor="@color/design_default_color_primary"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:fontFamily="@font/bariol_bold"/>
 
     <Button
         android:id="@+id/button_select"
@@ -59,6 +62,7 @@
         android:textAllCaps="false"
         android:textSize="20dp"
         android:textColor="@color/white"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bariol_bold"/>
 
 </RelativeLayout>
