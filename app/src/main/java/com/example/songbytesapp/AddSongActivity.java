@@ -44,8 +44,12 @@ public class AddSongActivity extends AppCompatActivity {
         EditText editLength = (EditText) findViewById(R.id.editTextLength);
         String name = editName.getText().toString();
         String artist = editArtist.getText().toString();
-        String length = editLength.getText().toString();
-        String data = "Name: " + name + "\nLength(in mins): " + length + "\nArtist: " + artist;
+        String len = editLength.getText().toString();
+        if(name.length()==0||len.length()==0||artist.length()==0||URI==null) {
+            Toast.makeText(this, "Please provide all the details!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        String data = "New Song Added\nName: " + name + "\nLength(in mins): " + len + "\nArtist: " + artist;
         Toast.makeText(this, data, Toast.LENGTH_LONG).show();
     }
 }

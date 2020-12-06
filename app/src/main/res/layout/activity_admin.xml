@@ -35,4 +35,11 @@
         android:onClick="openAddSongActivity"
         android:fontFamily="@font/bariol_bold"/>
 
+    <fragment
+        android:name="com.example.songbytesapp.DisplaySongFragment"
+        android:id="@+id/fooFragment"
+        android:layout_below="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
