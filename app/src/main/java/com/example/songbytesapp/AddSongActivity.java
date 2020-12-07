@@ -51,5 +51,17 @@ public class AddSongActivity extends AppCompatActivity {
         }
         String data = "New Song Added\nName: " + name + "\nLength(in mins): " + len + "\nArtist: " + artist;
         Toast.makeText(this, data, Toast.LENGTH_LONG).show();
+        resetFields();
+    }
+
+    public void resetFields() {
+        EditText editName = (EditText) findViewById(R.id.addSongName);
+        EditText editArtist = (EditText) findViewById(R.id.addSongArtist);
+        EditText editLength = (EditText) findViewById(R.id.addSongLength);
+        editName.setText("");
+        editArtist.setText("");
+        editLength.setText("");
+        tvAttachment.setText(null);
+        tvAttachment.setVisibility(View.INVISIBLE);
     }
 }
