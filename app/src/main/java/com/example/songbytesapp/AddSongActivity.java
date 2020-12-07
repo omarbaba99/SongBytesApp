@@ -39,9 +39,9 @@ public class AddSongActivity extends AppCompatActivity {
     }
 
     public void addSong(View view) {
-        EditText editName = (EditText) findViewById(R.id.editTextName);
-        EditText editArtist = (EditText) findViewById(R.id.editTextArtist);
-        EditText editLength = (EditText) findViewById(R.id.editTextLength);
+        EditText editName = (EditText) findViewById(R.id.addSongName);
+        EditText editArtist = (EditText) findViewById(R.id.addSongArtist);
+        EditText editLength = (EditText) findViewById(R.id.addSongLength);
         String name = editName.getText().toString();
         String artist = editArtist.getText().toString();
         String len = editLength.getText().toString();

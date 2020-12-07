@@ -8,28 +8,28 @@
     tools:context=".AdminActivity">
 
     <TextView
-        android:id="@+id/mainTextHeader1"
+        android:id="@+id/adminMainHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:text="Welcome Admin"
+        android:text="@string/adminHeader"
         android:textColor="@color/design_default_color_primary"
         android:textSize="35sp"
         android:fontFamily="@font/bariol_bold"/>
 
     <Button
-        android:id="@+id/button_add"
+        android:id="@+id/adminAddSongButton"
         android:layout_width="wrap_content"
-        android:layout_below="@+id/mainTextHeader1"
+        android:layout_below="@+id/adminMainHeader"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:textColor="@color/white"
-        android:text="Add a new Song"
+        android:text="@string/adminAddButtonText"
         android:textAllCaps="false"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:backgroundTint="@color/design_default_color_primary"
         android:layout_marginTop="20dp"
         android:onClick="openAddSongActivity"
@@ -38,7 +38,7 @@
     <fragment
         android:name="com.example.songbytesapp.DisplaySongFragment"
         android:id="@+id/fooFragment"
-        android:layout_below="@+id/button_add"
+        android:layout_below="@+id/adminAddSongButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

@@ -70,13 +70,13 @@ public class DisplaySongFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        spinner = (Spinner) Objects.requireNonNull(getView()).findViewById(R.id.spinner);
+        spinner = (Spinner) Objects.requireNonNull(getView()).findViewById(R.id.fragSpinner);
         List<Song> songList = new ArrayList<>();
-        Song song1 = new Song("Baby Shark", 5, "Pinkfong");
+        Song song1 = new Song("Baby Shark", 2.16, "Pink Fong");
         songList.add(song1);
-        Song song2 = new Song("Despacito", 3, "Luis Fonsi Daddy Yankee");
+        Song song2 = new Song("Despacito", 4.41, "Luis Fonsi, Daddy Yankee");
         songList.add(song2);
-        Song song3 = new Song("Waka Waka", 4, "Shakira");
+        Song song3 = new Song("Waka Waka", 4.01, "Shakira");
         songList.add(song3);
         ArrayAdapter<Song> adapter = new ArrayAdapter<Song>(Objects.requireNonNull(getActivity()), android.R.layout.simple_spinner_item, songList);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -100,7 +100,7 @@ public class DisplaySongFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_display_song,
                 container, false);
-        Button button = (Button) view.findViewById(R.id.button_select);
+        Button button = (Button) view.findViewById(R.id.playSongButton);
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -121,11 +121,10 @@ public class DisplaySongFragment extends Fragment {
 
     private void displaySongData(Song song) {
         songName = song.getName();
-        int length = song.getLength();
+        double length = song.getLength();
         String artist = song.getArtist();
         songData = "Name: " + songName + "\nLength(in mins): " + length + "\nArtist: " + artist;
-//        Toast.makeText(this, songData, Toast.LENGTH_LONG).show();
-        TextView textView = (TextView) Objects.requireNonNull(getView()).findViewById(R.id.songmainTextHeader4);
+        TextView textView = (TextView) Objects.requireNonNull(getView()).findViewById(R.id.fragMainTextHeader2);
         textView.setText(songData);
     }
 }

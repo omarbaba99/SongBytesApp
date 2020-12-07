@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickLogin(View view) {
-        EditText editEmail = (EditText) findViewById(R.id.editTextEmail);
-        EditText editPassword = (EditText) findViewById(R.id.editTextPassword);
+        EditText editEmail = (EditText) findViewById(R.id.mainEmail);
+        EditText editPassword = (EditText) findViewById(R.id.mainPassword);
         String email = editEmail.getText().toString();
         String password = editPassword.getText().toString();
         if(email.equals("admin@gmail.com") && password.equals("admin"))

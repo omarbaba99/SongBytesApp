@@ -2,4 +2,18 @@
     <string name="app_name">Song Bytes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Custom fragment</string>
+    <string name="addSongHeader">Enter New Song Details</string>
+    <string name="addSongNameHint">Enter Name</string>
+    <string name="addSongArtistHint">Enter Artist</string>
+    <string name="addSongLengthHint">Enter Length(in mins)</string>
+    <string name="addSongUploadButtonText">Upload mp3 File</string>
+    <string name="addSongAddButtonText">Add Song</string>
+    <string name="adminHeader">Welcome Admin</string>
+    <string name="adminAddButtonText">Add a new Song</string>
+    <string name="mainAppHeader">Song Bytes</string>
+    <string name="mainPasswordHint">Enter password</string>
+    <string name="mainEmailHint">Enter email</string>
+    <string name="mainLoginButtonText">Login</string>
+    <string name="playSongDetailsText">Song Details</string>
+    <string name="userSongHeader">Welcome User</string>
 </resources>
