@@ -6,6 +6,7 @@ public class Song {
     private String artist;
 
     public Song(String name, double length, String artist) {
+        //constructor to fill in the song details
         this.name = name;
         this.length = length;
         this.artist = artist;

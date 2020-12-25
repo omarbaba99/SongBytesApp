@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickLogin(View view) {
+
+        //Check for valid input and open the corresponding activity- user or admin
         EditText editEmail = (EditText) findViewById(R.id.mainEmail);
         EditText editPassword = (EditText) findViewById(R.id.mainPassword);
         String email = editEmail.getText().toString();

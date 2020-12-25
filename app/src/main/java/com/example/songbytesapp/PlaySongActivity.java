@@ -17,6 +17,7 @@ public class PlaySongActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_song);
 
+        //Get the song details through intent
         Intent intent = getIntent();
         String songData = intent.getStringExtra("songData");
         TextView textView = (TextView) findViewById(R.id.playMainTextHeader3);
@@ -37,25 +38,26 @@ public class PlaySongActivity extends AppCompatActivity {
         else if(songName.equals("Baby Shark")) {
             SongId += "babyshark";
         }
+        //Link the corresponding song to the media player
         String packageName = getPackageName();
         resId = getResources().getIdentifier(SongId, "raw", packageName);
         music = MediaPlayer.create(
                 this, resId);
 
     }
-
+    // Play the music
     public void musicplay(View v)
     {
         music.start();
     }
 
-    // Pausing the music
+    // Pause the music
     public void musicpause(View v)
     {
         music.pause();
     }
 
-    // Stoping the music
+    // Stop the music
     public void musicstop(View v)
     {
         music.stop();
