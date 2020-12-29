@@ -16,4 +16,8 @@
     <string name="mainLoginButtonText">Login</string>
     <string name="playSongDetailsText">Song Details</string>
     <string name="userSongHeader">Welcome User</string>
+    <string name="frag_header">Please choose your desired song from the list</string>
+    <string name="frag_sub_header">Selected Song Details</string>
+    <string name="frag_sub_header2">Selected Song Details</string>
+    <string name="frag_button">Play song</string>
 </resources>

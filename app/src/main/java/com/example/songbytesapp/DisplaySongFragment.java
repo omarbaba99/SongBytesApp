@@ -100,15 +100,14 @@ public class DisplaySongFragment extends Fragment {
         });
         return view;
     }
-    public void getSelectedSong(View v) {
 
+    public void getSelectedSong(View v) {
         //get the song selected from spinner
         Song song = (Song) spinner.getSelectedItem();
         displaySongData(song);
     }
 
     private void displaySongData(Song song) {
-
         //Display the selected song details
         songName = song.getName();
         double length = song.getLength();

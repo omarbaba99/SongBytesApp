@@ -1,6 +1,7 @@
 package com.example.songbytesapp;
 
 public class Song {
+
     private String name;
     private double length;
     private String artist;

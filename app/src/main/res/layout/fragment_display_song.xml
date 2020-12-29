@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="15dp"
         android:gravity="center"
-        android:text="Please choose your desired song from the list"
+        android:text="@string/frag_header"
         android:textColor="@color/design_default_color_primary"
         android:textSize="20sp"
         android:fontFamily="@font/bariol_bold"/>
@@ -36,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="55dp"
         android:gravity="center"
-        android:text="Selected Song Details"
+        android:text="@string/frag_sub_header"
         android:textColor="@color/design_default_color_primary"
         android:textSize="25sp"
         android:fontFamily="@font/bariol_bold"/>
@@ -51,7 +53,7 @@
         android:background="@drawable/back"
         android:gravity="center"
         android:textStyle="italic"
-        android:text="Selected Song Details"
+        android:text="@string/frag_sub_header2"
         android:textColor="@color/purple_200"
         android:textSize="20sp"
         android:fontFamily="@font/bariol_bold"/>
@@ -62,7 +64,7 @@
         android:layout_below="@+id/fragMainTextHeader2"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:text="Play song"
+        android:text="@string/frag_button"
         android:textAllCaps="false"
         android:textSize="20dp"
         android:background="@drawable/custom_button"

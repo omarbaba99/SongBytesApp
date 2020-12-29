@@ -14,13 +14,14 @@ public class AddSongActivity extends AppCompatActivity {
     private static final int PICK_FROM_GALLERY = 101;
     Uri URI = null;
     TextView tvAttachment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_song);
     }
-    public void uploadSong(View view) {
 
+    public void uploadSong(View view) {
         //pick song audio file from gallery
         Intent intent = new Intent();
         intent.setType("audio/*");
@@ -30,7 +31,6 @@ public class AddSongActivity extends AppCompatActivity {
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
         //once user id done selecting song audio file to upload
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_FROM_GALLERY && resultCode == RESULT_OK) {
@@ -65,7 +65,6 @@ public class AddSongActivity extends AppCompatActivity {
     }
 
     public void resetFields() {
-
         //To make the field empty once a new song is added
         EditText editName = (EditText) findViewById(R.id.addSongName);
         EditText editArtist = (EditText) findViewById(R.id.addSongArtist);

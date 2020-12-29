@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class PlaySongActivity extends AppCompatActivity {
     MediaPlayer music;
     int resId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
